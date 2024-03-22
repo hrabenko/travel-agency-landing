@@ -1,0 +1,63 @@
+@import '../../styles/_variables'
+@import '../../styles/_mixins'
+
+.hero-section
+  height: 1194px
+  width: 100vw
+  background-position-y: 95%
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 0 9%
+  color: $primary-color
+
+  .header
+    width: 100%
+    padding-top: 40px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &-nav-list
+      display: flex
+      gap: 32px
+
+      &-item:hover
+        @include nav-hover
+
+
+    .auth-buttons
+      display: flex
+      align-items: center
+      gap: 20px
+
+      .login-btn:hover
+        @include nav-hover
+
+      .signup-btn
+        @include accent-button
+        padding-left: 32px
+        padding-right: 32px
+
+        &:hover
+          @include accent-button-dark
+
+
+    a
+      color: $primary-color
+      font-family: $primary-font
+      font-size: 20px
+
+
+  .text-content
+    margin-top: 150px
+    width: 1000px
+
+    .hero-title
+      font-family: $secondary-font
+      font-weight: 400
+      font-size: 84px
+      margin-bottom: 20px
+
+    .hero-text
+      font-family: $primary-font
+      font-size: 24px
