@@ -7,7 +7,7 @@
   background-position-y: 95%
   background-repeat: no-repeat
   background-size: cover
-  padding: 0 9%
+  padding: 0 9vw
   color: $primary-color
 
   .header
@@ -49,7 +49,8 @@
 
 
   .text-content
-    margin-top: 150px
+    margin-top: 200px
+    margin-bottom: 170px
     width: 1000px
 
     .hero-title
@@ -61,3 +62,59 @@
     .hero-text
       font-family: $primary-font
       font-size: 24px
+
+  .book-form
+    display: flex
+    position: absolute
+    left: 0
+
+    .inputs-section
+      background-color: $primary-color
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      gap: 40px
+      padding: 70px 100px 70px 9vw
+
+      .input-control
+        display: flex
+        flex-direction: column
+
+        .input-label
+          color: $additional-color
+          text-transform: uppercase
+          font-size: 18px
+          font-family: $primary-font
+          margin-bottom: 12px
+
+        .input
+          box-sizing: border-box
+          color: $secondary-color
+          font-family: $secondary-font
+          font-size: 20px
+          height: 40px
+          border-top: none
+          border-left: none
+          border-right: none
+          border-bottom: 1px solid $secondary-color
+
+          &:focus-visible
+            outline: none
+
+    .book-btn
+      display: flex
+      gap: 12px
+      align-items: center
+      color: $primary-color
+      background-color: $accent-color
+      border: none
+      border-bottom-right-radius: 20px
+      border-top-right-radius: 20px
+      width: 170px
+      font-size: 36px
+      padding: 0 20px
+      font-family: $secondary-font
+
+      &:hover
+        background-color: $secondary-color
+
+

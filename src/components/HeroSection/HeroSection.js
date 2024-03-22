@@ -1,6 +1,7 @@
 import './HeroSection.sass'
 import HeroBackground from '../../img/hero-section.png'
 import Header from "./Header";
+import BookingForm from "./BookingForm";
 function HeroSection() {
 
     return (
@@ -12,6 +13,7 @@ function HeroSection() {
                 <h1 className="hero-title">Start your unforgettable journey with us.</h1>
                 <p className="hero-text">The best travel for your journey begins now</p>
             </div>
+            <BookingForm />
         </div>
     )
 }
