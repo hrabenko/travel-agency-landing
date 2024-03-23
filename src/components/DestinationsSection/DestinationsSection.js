@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SectionsTextContent from "../SectionsTextContent/SectionsTextContent";
 import Arrows from "../Arrows/Arrows";
 import './DestinationsSection.sass';
 import DestinationCard from "./DestinationCard";
 
 function DestinationsSection() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    console.log(currentIndex)
+
     return (
         <div className="destinations-section">
             <div className="destinations-section-top">
@@ -12,10 +15,12 @@ function DestinationsSection() {
                     title="Popular Destinations"
                     description="Most popular destinations around the world, from historical places to natural wonders."
                 />
-                <Arrows />
+                <Arrows currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} lastIndex={data.length - 1} />
             </div>
             <div className="destinations-cards">
-                {data.map((item, index) => (
+                {data
+                    .filter((item, index) => index >= currentIndex)
+                    .map((item, index) => (
                     <DestinationCard
                         key={index}
                         image={item.image}
