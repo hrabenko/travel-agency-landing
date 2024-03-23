@@ -1,0 +1,87 @@
+@import '../../styles/_variables'
+@import '../../styles/_mixins'
+
+.offers-section
+  padding: 100px 9vw 140px
+
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 100px
+
+    .sections-text-content
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+
+  .offers-cards
+    display: flex
+    gap: 32px
+    width: 100%
+
+
+    .offer-card
+      max-width: 728px
+
+      &-image
+        border-top-left-radius: 26px
+        border-top-right-radius: 26px
+        height: 286px
+        width: 100%
+        object-fit: cover
+
+      &-content
+        border-bottom-left-radius: 26px
+        border-bottom-right-radius: 26px
+        background-color: #FFF8F1
+        padding: 40px 24px
+
+        .offer-card-location
+          font-family: $additional-font
+          font-weight: 400
+          color: $additional-color
+          font-size: 28px
+          margin-bottom: 5px
+
+        .offer-card-rating
+          margin-bottom: 20px
+
+        .offer-card-description
+          font-family: $primary-font
+          font-size: 18px
+          font-weight: 400
+          color: $secondary-color
+          margin-bottom: 24px
+
+        .offer-card-bottom
+          display: flex
+          justify-content: space-between
+          align-items: center
+
+          .price-container
+            display: flex
+            gap: 8px
+            align-items: center
+
+            &-text
+              font-family: $primary-font
+              font-size: 20px
+              color: $additional-color
+
+            .offer-card-price
+              font-family: $primary-font
+              font-size: 40px
+              color: $accent-color
+
+          .offer-card-button
+            @include accent-button
+            font-family: $primary-font
+            font-size: 20px
+            text-transform: uppercase
+            padding-right: 40px
+            padding-left: 40px
+            cursor: pointer
+
+            &:hover
+              @include accent-button-dark
