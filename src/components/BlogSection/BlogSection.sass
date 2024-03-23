@@ -1,0 +1,44 @@
+@import '../../styles/_variables'
+
+.blog-section
+  padding: 100px 9vw 140px
+
+  &-top
+    margin-bottom: 100px
+
+  .blog-content
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 32px
+
+    .blog-image
+      width: calc((100% - 32px) / 2)
+      object-fit: cover
+      border-radius: 26px
+
+    .blog-text
+      font-family: $primary-font
+      font-size: 24px
+      color: $secondary-color
+      padding: 30px 0
+
+      &-title
+        font-family: $secondary-font
+        font-size: 54px
+        margin-bottom: 24px
+        font-weight: 400
+
+      &-description
+
+        line-height: 52px
+        margin-bottom: 24px
+
+      &-link
+        color: $accent-color
+
+        &:hover
+          color: $secondary-color
+          text-decoration: underline
+          cursor: pointer
