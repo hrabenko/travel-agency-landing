@@ -6,7 +6,6 @@ import DestinationCard from "./DestinationCard";
 
 function DestinationsSection() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    console.log(currentIndex)
 
     return (
         <div className="destinations-section">
@@ -22,7 +21,7 @@ function DestinationsSection() {
                     .filter((item, index) => index >= currentIndex)
                     .map((item, index) => (
                     <DestinationCard
-                        key={index}
+                        key={`destination-card${index}`}
                         image={item.image}
                         description={item.description}
                         location={item.location}
