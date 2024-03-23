@@ -1,0 +1,15 @@
+@import '../../styles/_variables'
+@import '../../styles/_mixins'
+
+.arrows
+  display: flex
+  gap: 40px
+
+  .arrow
+    @include accent-button
+    padding-left: 28px
+    padding-right: 28px
+
+    &-disable
+      @include accent-button-dark
+

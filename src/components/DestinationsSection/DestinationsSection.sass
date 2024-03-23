@@ -1,0 +1,39 @@
+@import '../../styles/_variables'
+
+.destinations-section
+  padding: 100px 9vw 140px
+
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 100px
+
+  .destinations-cards
+    display: flex
+    gap: 32px
+
+    .destination-card
+      background-size: cover
+      background-position-x: 50%
+      padding-left: 25px
+      padding-bottom: 50px
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      min-width: 497px
+      height: 661px
+      border-radius: 26px
+
+      &-description
+        margin-bottom: 20px
+        color: $primary-color
+        font-family: $secondary-font
+        font-size: 28px
+
+      &-location
+        display: flex
+        gap: 10px
+        color: $primary-color
+        font-family: $primary-font
+        font-size: 24px
