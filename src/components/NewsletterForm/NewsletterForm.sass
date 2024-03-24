@@ -1,0 +1,61 @@
+@import "../../styles/_variables"
+@import "../../styles/_mixins"
+
+.newsletter-form
+  padding: 60px 80px
+  max-width: 1262px
+  border-radius: 26px
+  color: $additional-color
+  display: flex
+  justify-content: space-between
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1)
+
+
+  &-title
+    font-family: $secondary-font
+    font-size: 64px
+    font-weight: 400
+    white-space: nowrap
+
+  form
+    display: flex
+    gap: 32px
+    align-items: flex-end
+
+    div
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+
+      label
+        font-family: $primary-font
+        font-size: 20px
+        margin-bottom: 10px
+
+      input
+        padding: 24px 40px
+        font-family: $primary-font
+        background-color: #FFE8D4
+        color: $accent-color
+        font-size: 20px
+        border: none
+        border-radius: 12px
+        width: 372px
+
+        &::placeholder
+          color: $accent-color
+
+        &:focus-visible
+          outline: none
+
+
+    .subscribe-button
+      border: none
+      padding-left: 40px
+      padding-right: 40px
+      @include accent-button
+
+      &:hover
+        @include accent-button-dark
