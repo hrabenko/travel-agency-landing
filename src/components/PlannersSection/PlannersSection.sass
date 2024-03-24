@@ -1,0 +1,83 @@
+@import "../../styles/_mixins"
+@import "../../styles/_variables"
+
+.planners-section
+  padding: 100px 9vw 140px
+  display: flex
+  align-items: center
+  gap: 100px
+
+  &-text-content
+    min-width: 394px
+
+    .sections-text-content
+      margin-bottom: 32px
+      width: 100%
+
+
+    .first-square
+      width: 43px
+      height: 43px
+      background-color: $secondary-color
+      position: relative
+      left: 0
+      top: 5px
+      z-index: -1
+
+    .plans-button
+      @include accent-button
+      padding-left: 20px
+      padding-right: 20px
+      font-size: 18px
+      font-family: $primary-font
+      cursor: pointer
+      margin-left: 15px
+
+      &:hover
+        @include accent-button-dark
+
+    .second-square
+      width: 43px
+      height: 43px
+      background-color: $additional-color
+      position: relative
+      left: 175px
+      top: -5px
+      z-index: -1
+
+  .planners-cards
+    display: flex
+    align-items: center
+    gap: 32px
+
+    .planner-card
+      &:hover .planner-card-description
+        display: block
+
+
+      &-image
+        width: 250px
+        height: 350px
+        object-fit: cover
+        border-radius: 26px
+
+
+      &-description
+        display: none
+        font-family: $primary-font
+        color: $secondary-color
+        font-size: 18px
+        margin-top: 15px
+
+        div
+          display: flex
+          justify-content: space-between
+
+          &:first-child
+            text-transform: uppercase
+
+        .planner-card-location
+          font-family: $secondary-font
+          font-size: 28px
+          font-weight: 500
+          padding: 5px 0
