@@ -4,6 +4,7 @@ import OffersSection from "./components/OffersSection/OffersSection";
 import BlogSection from "./components/BlogSection/BlogSection";
 import PlannersSection from "./components/PlannersSection/PlannersSection";
 import GallerySection from "./components/GallerySection/GallerySection";
+import ExperiencesSection from "./components/ExperiencesSection/ExperiencesSection";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <BlogSection />
             <PlannersSection />
             <GallerySection />
+            <ExperiencesSection />
         </div>
     )
 }
