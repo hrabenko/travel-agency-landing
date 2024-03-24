@@ -3,6 +3,7 @@ import DestinationsSection from "./components/DestinationsSection/DestinationsSe
 import OffersSection from "./components/OffersSection/OffersSection";
 import BlogSection from "./components/BlogSection/BlogSection";
 import PlannersSection from "./components/PlannersSection/PlannersSection";
+import GallerySection from "./components/GallerySection/GallerySection";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
             <OffersSection />
             <BlogSection />
             <PlannersSection />
+            <GallerySection />
         </div>
     )
 }
