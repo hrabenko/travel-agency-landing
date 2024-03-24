@@ -6,6 +6,7 @@ import PlannersSection from "./components/PlannersSection/PlannersSection";
 import GallerySection from "./components/GallerySection/GallerySection";
 import ExperiencesSection from "./components/ExperiencesSection/ExperiencesSection";
 import Footer from "./components/Footer/Footer";
+import NewsletterForm from "./components/NewsletterForm/NewsletterForm";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <PlannersSection />
             <GallerySection />
             <ExperiencesSection />
+            <NewsletterForm />
             <Footer />
         </div>
     )
