@@ -8,7 +8,7 @@ function HeroSection() {
     return (
         <div className="header">
             <div>
-                <img src={Logo} alt="Travellian Logo" />
+                <img className="header-logo" src={Logo} alt="Travellian Logo" />
             </div>
             <nav className="header-nav">
                 <ul className="header-nav-list">

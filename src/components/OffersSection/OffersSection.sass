@@ -107,3 +107,39 @@
             padding-right: 24px
             padding-left: 24px
             margin-left: 10px
+
+@media (max-width: 768px)
+  .offers-section
+    margin-bottom: 100px
+    padding-left: 15px
+    padding-right: 15px
+    &-top
+      flex-direction: column-reverse
+      align-items: center
+
+      .sections-text-content
+        width: 100%
+        margin-bottom: 80px
+        align-items: flex-end
+
+    .offers-cards
+      .offer-card
+        background-position-y: 50%
+        min-width: 100%
+        height: 456px
+
+@media (max-width: 480px)
+  .offers-section
+    &-top
+      .sections-text-content
+        align-items: flex-start
+
+    .offers-cards
+      .offer-card
+        .offer-card-bottom
+          flex-direction: column
+          align-items: flex-start
+
+          .offer-card-button
+            margin-left: 0
+            margin-top: 10px

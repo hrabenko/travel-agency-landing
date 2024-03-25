@@ -165,13 +165,19 @@
 
     .book-form
       .inputs-section
-        padding-top: 20px
-        padding-bottom: 20px
+        padding-top: 40px
+        padding-bottom: 40px
         grid-template-columns: repeat(2, 1fr)
 
 @media (max-width: 768px)
   .hero-section
+    background-position-y: 100%
+    height: 789px
+
     .header
+      .header-logo
+        width: 200px
+
       &-nav-list
         display: none
 
@@ -219,3 +225,57 @@
         .login-btn
           color: $secondary-color
 
+    .text-content
+      margin-top: 100px
+      margin-bottom: 100px
+      width: 600px
+
+      .hero-title
+        font-size: 54px
+
+@media (max-width: 680px)
+  .hero-section
+    height: 1100px
+
+    .book-form
+      .inputs-section
+        grid-template-columns: repeat(1, 1fr)
+
+@media (max-width: 480px)
+  .hero-section
+    height: 1210px
+
+    .text-content
+      margin-top: 100px
+      margin-bottom: 100px
+      width: 100%
+
+      .hero-title
+        font-size: 40px
+
+    .book-form
+      position: initial
+      flex-direction: column
+
+      .inputs-section
+        border-top-left-radius: 16px
+        border-top-right-radius: 16px
+        padding: 40px
+
+        .input-control
+          width: 100%
+
+          .input-label
+            font-size: 14px
+
+          .input
+            font-size: 14px
+            min-width: 100%
+
+      .book-btn
+        width: 100%
+        height: 128px
+        justify-content: center
+        border-top-right-radius: 0
+        border-bottom-right-radius: 16px
+        border-bottom-left-radius: 16px

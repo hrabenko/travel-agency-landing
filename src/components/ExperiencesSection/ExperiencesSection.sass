@@ -17,7 +17,6 @@
     .experience-card
       min-width: 36vw
       width: 36vw
-
       background-color: #F5F6F7
       color: $additional-color
       border-radius: 12px
@@ -51,3 +50,20 @@
   .experiences-section
     padding-left: 32px
     padding-right: 32px
+
+
+@media (max-width: 768px)
+  .experiences-section
+    padding-bottom: 50px
+    padding-left: 15px
+    padding-right: 15px
+    .experiences-cards
+      margin-bottom: 100px
+      .experience-card
+        min-width: 65vw
+
+@media (max-width: 480px)
+  .experiences-section
+    .experiences-cards
+      .experience-card
+        min-width: 100%

@@ -93,3 +93,31 @@
     flex-wrap: wrap
     max-width: 610px
     margin: -100px calc((100% - 610px) / 2) 0
+
+@media (max-width: 768px)
+  .newsletter-form
+    position: initial
+    max-width: 100%
+    margin-right: 15px
+    margin-left: 15px
+    margin-top: 100px
+    form
+      flex-wrap: wrap
+
+
+@media (max-width: 480px)
+  .newsletter-form
+    max-width: 100%
+    padding: 50px 20px 40px
+    &-title
+      font-size: 40px
+    form
+      flex-wrap: wrap
+      div
+        min-width: 100%
+        input
+          min-width: 100%
+
+      .subscribe-button
+        width: 100%
+

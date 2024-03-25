@@ -89,3 +89,22 @@
   .planners-section
     padding-left: 32px
     padding-right: 32px
+
+@media (max-width: 768px)
+  .planners-section
+    flex-direction: column
+    padding-left: 15px
+    padding-right: 15px
+    &-text-content
+      min-width: 100%
+    .planners-cards
+      flex-direction: column
+      width: 100%
+
+      .planner-card
+        width: 100%
+        .planner-card-description
+          display: block
+
+        &-image
+          width: 100%
