@@ -17,7 +17,8 @@
     gap: 32px
 
     .blog-image
-      width: calc((100% - 32px) / 2)
+      height: 90vh
+      max-width: 50%
       object-fit: cover
       border-radius: 26px
 
@@ -45,3 +46,14 @@
           color: $secondary-color
           text-decoration: underline
           cursor: pointer
+
+@media (max-width: 1600px)
+  .blog-section
+    padding-left: 32px
+    padding-right: 32px
+
+@media (max-width: 1200px)
+  .blog-section
+    .blog-content
+      .blog-text
+        font-size: 18px

@@ -8,7 +8,7 @@ import twitterIcon from '../../img/social-media-icons/twitter.svg'
 function Footer() {
     return (
         <div className="footer">
-            <div>
+            <div className="footer-info">
                 <img src={Logo} alt="Travellian Logo"/>
                 <p className="copyright">Copyright © Travellian 2020 All rights reserved</p>
             </div>

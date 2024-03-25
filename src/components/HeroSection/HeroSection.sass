@@ -97,6 +97,7 @@
           border-right: none
           border-bottom: 1px solid $secondary-color
           cursor: pointer
+          width: 225px
 
           &:focus-visible
             outline: none
@@ -120,4 +121,46 @@
       &:hover
         background-color: $secondary-color
 
+@media (max-width: 1600px)
+  .hero-section
+    padding: 0 32px
 
+    .book-form
+      .inputs-section
+        padding-left: 32px
+
+        .input
+          max-width: 195px
+
+
+@media (max-width: 1200px)
+  .hero-section
+    height: 880px
+
+    .text-content
+      margin-top: 130px
+      margin-bottom: 130px
+      width: 800px
+
+      .hero-title
+        font-size: 64px
+
+    .book-form
+      .inputs-section
+        .input
+          max-width: 159px
+
+@media (max-width: 1024px)
+  .hero-section
+    .header
+      &-nav-list
+        //flex-direction: column
+        flex-wrap: wrap
+        max-width: 300px
+        //ite
+
+    .book-form
+      .inputs-section
+        padding-top: 20px
+        padding-bottom: 20px
+        grid-template-columns: repeat(2, 1fr)
