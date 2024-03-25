@@ -41,6 +41,12 @@
         &:hover
           @include accent-button-dark
 
+    .burger-menu-icon
+      display: none
+
+    .burger-menu
+      display: none
+
 
     a
       color: $primary-color
@@ -154,13 +160,62 @@
   .hero-section
     .header
       &-nav-list
-        //flex-direction: column
         flex-wrap: wrap
         max-width: 300px
-        //ite
 
     .book-form
       .inputs-section
         padding-top: 20px
         padding-bottom: 20px
         grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 768px)
+  .hero-section
+    .header
+      &-nav-list
+        display: none
+
+      .header-buttons
+        display: none
+
+      .burger-menu-icon
+        display: block
+        cursor: pointer
+
+      .burger-menu-active
+        padding: 40px
+        position: fixed
+        left: 0
+        top: 0
+        width: 100vw
+        height: 100vh
+        background-color: $primary-color
+        color: $secondary-color
+        display: block
+        z-index: 1
+        font-size: 36px
+
+        .back-icon
+          cursor: pointer
+
+        .burger-menu-content
+          margin-top: 20px
+
+          .burger-menu-nav-list
+            margin-bottom: 20px
+
+            li
+              margin-bottom: 20px
+
+            &-item
+              color: $secondary-color
+
+              &:hover
+                @include nav-hover
+
+      .auth-buttons
+        margin-top: 40px
+
+        .login-btn
+          color: $secondary-color
+

@@ -1,5 +1,9 @@
 import Logo from '../../img/logo.svg'
+import burgerMenuIcon from '../../img/burger-menu-icon.svg'
+import {useState} from "react";
+import BurgerMenu from "./BurgerMenu";
 function HeroSection() {
+    const [sidebar, setSidebar] = useState(false);
 
     return (
         <div className="header">
@@ -15,10 +19,12 @@ function HeroSection() {
                     <li><a className="header-nav-list-item" href="#">Pricing</a></li>
                 </ul>
             </nav>
-            <div className="auth-buttons">
+            <div className="header-buttons auth-buttons">
                 <a className="login-btn" href="#">Login</a>
                 <a className="signup-btn" href="#">Sign Up</a>
             </div>
+            <img onClick={() => setSidebar(prevState => !prevState)} className="burger-menu-icon" src={burgerMenuIcon} />
+            <BurgerMenu sidebar={sidebar} setSidebar={setSidebar} />
         </div>
     )
 }
